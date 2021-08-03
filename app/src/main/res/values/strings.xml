@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Quotes App</string>
+
+    <string name="poem_name">Aaron Stone</string>
+
+    <string name="poem">Though the sun sets and finalizes another day,
+It leaves us with an array of color and hope,
+Hope that a new day will come,
+Hope that life with you will continue to be as beautiful
+As it is now.
+It fills my heart with gladness knowing that
+Though the sun is being replaced with night,
+When I lay my head to rest,
+You will be by my side,
+Comforting me tonight.</string>
+    <string name="date">30-July-2021</string>
+    <string name="update">UPDATE</string>
+    <string name="delete">DELETE</string>
+</resources>

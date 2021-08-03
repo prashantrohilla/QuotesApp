@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="@drawable/edittext_bg_design">
+
+        <TextView
+            android:id="@+id/textview_poetName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aclonica"
+            android:minHeight="30dp"
+            android:text="@string/poem_name"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:textColor="@color/textcolor"/>
+
+        <TextView
+            android:id="@+id/textview_poetryData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/poem"
+            android:textSize="16sp"
+            android:fontFamily="@font/aclonica"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/textcolor"/>
+
+        <TextView
+            android:id="@+id/textview_poetryDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/date"
+            android:gravity="center_vertical|right"
+            android:padding="10dp"
+            android:fontFamily="@font/aclonica"
+            android:textColor="@color/textcolor"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/update_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/update"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/aclonica"
+                android:background="@drawable/button_bg"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/delete_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/delete"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/aclonica"
+                android:background="@drawable/button_bg"/>
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
