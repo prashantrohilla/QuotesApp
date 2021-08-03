@@ -46,7 +46,8 @@
             android:gravity="center_vertical|right"
             android:padding="10dp"
             android:fontFamily="@font/aclonica"
-            android:textColor="@color/textcolor"/>
+            android:textColor="@color/textcolor"
+            android:layout_marginEnd="10dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -70,6 +71,17 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="@string/delete"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/aclonica"
+                android:background="@drawable/button_bg"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/share_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Share"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="20dp"
                 android:layout_weight="1"

@@ -69,6 +69,18 @@ public class PoetryAdapter extends RecyclerView.Adapter<PoetryAdapter.ViewHolder
                 context.startActivity(i);
             }
         });
+
+        holder.share.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String sharetext=poetryModel.get(position).getPoetry_data();
+                Intent sendIntent= new Intent();
+                sendIntent.setAction(Intent.ACTION_SEND);
+                sendIntent.setType("text/plain");
+                sendIntent.putExtra(Intent.EXTRA_TEXT, sharetext);
+                context.startActivity(sendIntent);
+            }
+        });
     }
 
     @Override
@@ -78,7 +90,7 @@ public class PoetryAdapter extends RecyclerView.Adapter<PoetryAdapter.ViewHolder
 
     public class ViewHolder extends RecyclerView.ViewHolder { // initialisation of components
         TextView poetName, poetry, date_time;
-        AppCompatButton update, delete;
+        AppCompatButton update, delete, share;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -87,6 +99,7 @@ public class PoetryAdapter extends RecyclerView.Adapter<PoetryAdapter.ViewHolder
             date_time = itemView.findViewById(R.id.textview_poetryDate);
             update = itemView.findViewById(R.id.update_btn);
             delete = itemView.findViewById(R.id.delete_btn);
+            share = itemView.findViewById(R.id.share_btn);
         }
     }
 
